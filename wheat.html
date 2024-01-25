@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wheat disease detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="topic.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+</head>
+<body class="wheat">
+    <header>
+        <nav>
+            <div class="logo">CropDoc</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="corn.html">Corn</a></li>
+                <li><a href="potato.html">Potato</a></li>
+                <li><a href="rice.html">Rice</a></li>
+                <li><a href="wheat.html">Wheat</a></li>
+            </ul>
+      
+            <div class="menu-icon">&#9776;</div>
+        </nav>
+    </header>
+        <div class="contain">
+            <div class="container-topic">
+                <div class="refresh-button">
+                    <button id="refreshImage"></button>
+                </div>
+                <h1>Wheat disease detection</h1>
+                <div>
+                    <input class="input" type="file" id="imageInput" accept="image/*">
+                    <img class="input" id="selectedImage" src="" alt="Selected Image">
+                    <button id="captureButton">Capture Image from Camera</button>
+                    <img id="capturedImage" alt="Captured Image" style="display: none;">
+                </div>
+    
+                <button id="recognizeButton">Find disease</button>
+                <p id="result">Result will be displayed here.</p>
+            </div>
+            <!-- New section for prediction result and medicine -->
+        
+            <div class="container-topic">
+                <h2>Prediction Result</h2>
+                <p>Prediction result goes here.</p>
+            </div> 
+            <div class="container-topic">
+                <h2>Preferable Medicine</h2>
+                <p>Preferable medicine and its uses go here.</p>
+            </div>
+            <div class="container-topic">
+                <h2>Similer deases</h2>
+                <p>similer types of deases</p>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+</body>
+</html>
